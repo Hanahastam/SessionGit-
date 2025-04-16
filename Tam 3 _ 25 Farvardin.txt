@@ -1,0 +1,20 @@
+# برنامه‌ای بنویسید که یک شیء را دریافت کند و property‌هایی که مقدار آن‌ها null یا undefined است را حذف کند و شیء جدید را در خروجی چاپ کند.
+
+function cleanObject(obj) {
+  for (let key in obj) {
+    if (obj[key] === null || obj[key] === undefined) {
+      delete obj[key];
+    }
+  }
+  return obj;
+}
+
+// تست:
+let sample = {
+  name: "Hana",
+  age: null,
+  job: "Designer",
+  address: undefined
+};
+
+console.log(cleanObject(sample));
