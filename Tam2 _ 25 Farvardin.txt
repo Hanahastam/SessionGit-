@@ -1,0 +1,18 @@
+# 2. متغیری از نوع object با نام orders تعریف کنید که شامل سه کلید book,pen,laptop باشد. هر کدام دارای ویژگیها کلیدهای name,model,price,count هستند. پس از تعریف در ادامه قطعه کدی بنویسید که به مقدار price هر کدام 10 واحد اضافه کند و مبلغ کل خرید را چاپ کند.
+
+
+let orders = {
+  laptop: { name: "Laptop", model: "HP", price: 15000, count: 1 },
+  book: { name: "Book", model: "A123", price: 200, count: 3 },
+  pen: { name: "Pen", model: "P456", price: 50, count: 5 }
+};
+
+// افزایش price هر آیتم به میزان ۱۰ واحد و محاسبه مبلغ کل:
+let total = 0;
+
+for (let key in orders) {
+  orders[key].price += 10;
+  total += orders[key].price * orders[key].count;
+}
+
+console.log("مبلغ کل خرید:", total);
