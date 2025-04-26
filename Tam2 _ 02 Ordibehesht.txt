@@ -1,0 +1,17 @@
+# تعداد اعداد زوج و فرد را شمارش کنید
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let Adad_zooj = 0;
+let Adad_Fard = 0;
+
+num.forEach(function(number) {
+    if (number % 2 === 0) {
+        Adad_zooj++;
+    } else {
+        Adad_Fard++;
+    }
+});
+
+console.log("Tedad Adad zooj:", Adad_zooj);
+console.log("Tedad Adad Fard :", Adad_Fard);
