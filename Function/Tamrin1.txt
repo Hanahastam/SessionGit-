@@ -1,0 +1,17 @@
+#  1. تابع محاسبه‌ی میانگین اعداد
+
+function average(numbers) {
+  let sum = 0; // مقدار اولیه‌ی مجموع را صفر قرار می‌دهیم
+  for (let num of numbers) { // روی هر عدد در آرایه حرکت می‌کنیم
+    sum += num; // عدد فعلی را به مجموع اضافه می‌کنیم
+  }
+  return sum / numbers.length; // مجموع را بر تعداد عناصر تقسیم می‌کنیم
+}
+
+
+
+#مثال
+const myNumbers = [5, 10, 15]; // آرایه‌ای از اعداد
+const result = average(myNumbers); // فراخوانی تابع و ذخیره نتیجه در result
+
+console.log("میانگین اعداد:", result); // خروجی: میانگین اعداد: 10
