@@ -1,0 +1,13 @@
+#4. تابع جابه‌جایی کلیدها و مقادیر در آبجکت
+
+function jabeja(obj) {
+  const inverted = {};
+  for (let key in obj) {
+    inverted[obj[key]] = key;
+  }
+  return inverted;
+}
+
+// مثال:
+console.log(jabeja({ a: 1, b: 2, c: 3 }));
+// خروجی: { '1': 'a', '2': 'b', '3': 'c' }

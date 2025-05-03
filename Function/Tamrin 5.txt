@@ -1,0 +1,15 @@
+#5. تابع ادغام دو آبجکت در هم
+
+function mergeObjects(obj1, obj2) {
+  for (let key in obj2) {
+    obj1[key] = obj2[key];
+  }
+  return obj1;
+}
+
+// مثال:
+const object1 = { name: "Ali", age: 25 };
+const object2 = { age: 30, city: "Tehran" };
+
+console.log(mergeObjects(object1, object2));
+// خروجی: { name: "Ali", age: 30, city: "Tehran" }
